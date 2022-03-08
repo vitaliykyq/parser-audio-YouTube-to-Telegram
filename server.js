@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const bodyParser = require('body-parser');
-const session = require('express-session');
 const Logger = require('./Logger');
 
 app.set('views', path.join(__dirname, 'views'));

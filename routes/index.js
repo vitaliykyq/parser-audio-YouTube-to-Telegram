@@ -13,8 +13,8 @@ const post_index = require("./pages/post/post_index");
 
 
 /* [ - - - - - STATUS - - - - - ] */
-router.get('/', (req, res, next) => {get_index(res, req);});
-router.post('/', (req, res, next) => {post_index(req, res);});
+router.get('/', (req, res) => {get_index(res, req);});
+router.post('/', (req, res) => {post_index(req, res);});
 
 module.exports = router;
 
