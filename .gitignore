@@ -1,3 +1,9 @@
+#Vitaliykyq
+node_modules
+.idea
+
+#GitHub
+
 # Logs
 logs
 *.log
