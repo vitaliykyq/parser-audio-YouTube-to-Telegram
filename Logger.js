@@ -22,7 +22,8 @@ class Logger{
     // red | green | yellow | blue | magenta | cyan | gray
     static Mode = {
         SERVER: "[ Server ]".green,
-        PAGE:   "[ Page ]".cyan
+        PAGE:   "[ Page ]".cyan,
+        DATA:   "[ Data ]".blue,
     }
 }
 
