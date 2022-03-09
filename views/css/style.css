@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 .modal-body-general{
     background: #0000007a;
     /* Set rules to fill background */
@@ -38,4 +42,53 @@
 
 .content-body-general{
     padding: 20px;
+}
+
+
+.content-body-general{
+    height: 100%;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #f17070 0%, #bd5959 8%, #6c3f83 30%, #4f2d93 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #6ea3f1 0%, #549bd7 8%, #7564d1 25%, #201f5d 62.5%, #5d4a1f 100%);
+    text-align: center;
+}
+
+.content-form{
+    background: #ffffff45;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: #0000004f 0px 1px 20px 1px;
+}
+
+.content-form input{
+    background: #e6d8f9;
+    border-radius: 4px;
+    outline: none;
+    border: 0;
+    padding: 2px 5px;
+    box-shadow: none;
+    transition: 1s;
+}
+
+.content-form input:focus{
+    box-shadow: black 0 0 10px;
+    transition: 1s;
+}
+
+.content-form a{
+    color: #082bad;
+}
+
+.content-form .title{
+    color:#33256a;
+}
+
+#startProgram{
+    background: #667dd4;
+    border: 1px solid #7164ce;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: #7463d0 0 0 6px;
+    color: #e6d8f9;
 }

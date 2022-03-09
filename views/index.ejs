@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/buttonClick.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
 
     <title>Main Page</title>
 
@@ -19,7 +22,7 @@
 <body>
 
 <script type="text/javascript">
-    $(document).ready(() => {
+   /* $(document).ready(() => {
         $("#form").submit((event) => {
             event.preventDefault();
             $.ajax({
@@ -33,7 +36,7 @@
                 }
             })
         });
-    });
+    });*/
 </script>
 
 
@@ -61,26 +64,31 @@
            style="color: brown; text-decoration: underline; cursor: pointer"
            onclick="localStorage.removeItem('language'); location.reload()"></p>
         <br><br><br>
-        <p><input type="text" name="token" required></p>
-        <p>Токен телеграм бота</p>
-        <p><a href="https://sendpulse.ua/ru/knowledge-base/chatbot/create-telegram-chatbot" target="_blank">Як створити телеграм бота</a></p>
-        <br>
-        <hr>
-        <br>
-        <p><input type="text" name="channel" required></p>
-        <p>ID телеграм каналу</p>
-        <p><a href="#" onclick="alert('В розробці')">Як отримати ID каналу</a></p>
-        <br>
-        <hr>
-        <br>
-        <p><input type="text" name="link" required></p>
-        <p>Посилання на відео</p>
-        <br>
-        <button type="submit">Розпочати</button>
+        <div class="content-form">
+            <p class="title">Токен телеграм бота</p>
+            <p><input type="text" name="token" required></p>
+            <p><a href="https://sendpulse.ua/ru/knowledge-base/chatbot/create-telegram-chatbot" target="_blank">Як створити телеграм бота?</a></p>
+            <br>
+            <hr>
+            <br>
+            <p class="title">ID телеграм каналу</p>
+            <p><input type="text" name="channel" required></p>
+            <p><a href="#" onclick="alert('В розробці')">Як отримати ID каналу?</a></p>
+            <br>
+            <hr>
+            <br>
+            <p class="title">Посилання на відео</p>
+            <p><input type="text" name="link" required></p>
+            <br>
+            <button type="button" id="startProgram">Submit Order</button>
+        </div>
     </form>
 
 </body>
 <script src="JS/modal.js"></script>
+
+
+<script src="JS/ButtonClick.js"></script>
 
 <!-- Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
