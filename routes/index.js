@@ -16,5 +16,6 @@ const post_index = require("./pages/post/post_index");
 router.get('/', (req, res) => {get_index(res, req);});
 router.post('/', (req, res) => {post_index(req, res);});
 
+
 module.exports = router;
 

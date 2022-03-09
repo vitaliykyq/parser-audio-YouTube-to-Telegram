@@ -21,9 +21,9 @@ else {
 function showModal(){
     modalBody.style.display = "block";
 
-    if(!localStorage.getItem("language")) localStorage.setItem("language", "GB");
+    if(!localStorage.getItem("language")) language = "GB";
 
-    let flag = (localStorage.getItem("language") === "GB") ? flagGB : flagUK;
+    let flag = (language === "GB") ? flagGB : flagUK;
 
     setFlag(flag);
 

@@ -32,3 +32,7 @@
 #modalBody, #generalBody{
     display: none;
 }
+
+.content-body-general{
+    padding: 20px;
+}
